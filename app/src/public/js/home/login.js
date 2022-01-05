@@ -16,5 +16,7 @@ const req={
             "Content-Type":"application/json",
         },
         body:JSON.stringify(req),                 //제이슨문자로 요청한다는 뜻
-    });
+    })
+    .then((res)=>res.json())
+    .then(console.log);
 }
