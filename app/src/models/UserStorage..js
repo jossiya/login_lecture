@@ -27,6 +27,15 @@ class UserStorage{
         return userInfo   
         
     }
+    static save(userInfo){
+        const users=this.#users;
+        users.id.push(userInfo.id);
+        users.name.push(userInfo.name);
+        users.psw.push(userInfo.psw);
+        // users.belong.push(userInfo.belong);
+        // users.email.push(userInfo.email);
+        return {success:true}
+    }
 }
 
 module.exports=UserStorage;

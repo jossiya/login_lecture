@@ -10,13 +10,16 @@ const id =document.querySelector("#id"),
 
 registerBtn.addEventListener("click",register);
 function register(){
-const req={
+    if(!id.value) return alert("아이디를 입력해주세요");
+    if(psw.value !== confirmPsw.value) return alert("비밀번호가 일치하지 않습니다.");
+    
+
+    const req={
     id: id.value,
     psw: psw.value,
     belong:belong.value,
     email:email.value,
     };
-    console.log(req)
     fetch("/register",{
         method :"POST",          //body를 통해서 전달할 떄 post method로 요청해야한다.
         headers:{                  //header는 내가 전달하는 데이터가 JSON이다라고 표현 하는 거것이고, 내가 보내는 타입을 명시하는 것은 Content-Type이다.
