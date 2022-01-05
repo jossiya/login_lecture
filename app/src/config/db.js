@@ -1,6 +1,4 @@
 const mysql=require("mysql");
-const { connect } = require("../../../../login/app/src/config/db");
-
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -8,6 +6,6 @@ const db = mysql.createConnection({
     database: process.env.DB_DATABASE,
 });
 
-db=connect();
+db.connect();
 
-module.export= db
+module.exports= db

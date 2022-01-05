@@ -3,6 +3,8 @@
 const express= require("express");
 // const bodyPaser=require("body-parser");
 const app= express();
+const dotenv= require("dotenv");//개발환경 동일하게 환경변수 등록
+dotenv.config();
 
 //라우팅
 const home=require("./src/routes/home")
@@ -19,4 +21,3 @@ app.use(express.urlencoded({ extended:true }));//URL을 통해 전달되는 데�
 app.use("/",home);//홈페이지 기본//use ->>미들웨어 등록해줌 
 
 module.exports=app;
- 
