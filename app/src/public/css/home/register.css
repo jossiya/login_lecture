@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&family=Oooh+Baby&family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:ital,wght@1,200&display=swap");
+:root {
+  --background-color: #fff;
+}
+
+* {
+  font-family: "Hi Melody", cursive;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: url("../../image/드르와.jpg") no-repeat center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.sin-form {
+  position: relative;
+  box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 0.5);
+  /* background: chartreuse; */
+}
+.sin-form h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.int-area {
+  margin-bottom: 20px;
+  width: 400px;
+  position: relative;
+  /* background: chartreuse; */
+}
+.int-area:first-child {
+  margin-top: 0;
+}
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: black;
+  outline: none;
+}
+.int-area label {
+  position: absolute;
+  /* background-color: tomato; */
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.5s ease;
+}
+
+.int-area input:focus + label,
+.int-area input:valid + label {
+  top: 0;
+  font-size: 13px;
+  color: #166cea;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  height: 45px;
+  width: 60px;
+  color: #fff;
+  background: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.caption {
+  margin-top: 20px;
+  text-align: center;
+}
+.caption a {
+  color: #fff;
+  font-size: 20px;
+}

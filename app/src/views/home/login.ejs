@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/home/login.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/home/login.css">
+    <title>로그인</title>
 </head>
 <body> 
-    <p><input id="id" type="text"></P>
-    <p><input id="psw" type="text"></p>
-    <p><button>버튼</button></p>
+    <section class="login-form">
+        <h1>LOGIN PAGE</h1>
+        <form>
+            <div class="int-area">
+                <input type="text" id="id" name="id" autocomplete="Off" required>
+                <label for="id">USER NAME</label>
+            </div>
+            <div class="int-area">
+                <input type="password" id="psw" name="pw"autocomplete="Off" required>
+                <label for="psw">PASSWORD</label>
+            </div>
+            <div class= "btn-area">
+                <button id="btn" type="button">LOGIN</button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="/register">Not registered? SIGN-UP</a>
 </body>
 </html>

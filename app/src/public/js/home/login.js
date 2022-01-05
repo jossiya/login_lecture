@@ -1,7 +1,7 @@
 "use strict"
 const id =document.querySelector("#id");
 const psw =document.querySelector("#psw")
-const loginBtn =document.querySelector("button")
+const loginBtn =document.querySelector("#btn")
 
 
 loginBtn.addEventListener("click",login);
